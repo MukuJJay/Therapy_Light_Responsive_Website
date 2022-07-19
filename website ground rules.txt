@@ -1,0 +1,7 @@
+1. don't use grids and flexes.
+2. follow dry technique. 
+3. class and ids should be named proper.
+4. modular approach of css. 
+5. don't use same h1 tag like make it h2
+6. html validation
+7. html 5 and css3
