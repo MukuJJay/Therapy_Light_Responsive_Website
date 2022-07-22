@@ -1,8 +1,0 @@
-1. why text-line start not left?
-2. crhome extention for checking hirarchy.
-3. give the background image to section.
-4. background image ::after element.
-5. all sections should be wrapped div.
-6. last-child also works instead.
-7. don't style html. 
-8. atomic design.
