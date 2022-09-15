@@ -1,83 +1,82 @@
 <!DOCTYPE html>
-<html lang="en" style="font-size: 10px;">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Therapy Light</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-
     <!-- ============ header =========== -->
-    
+ 
     <header class="header">
-        <div class="logo">
-                <a href="#">Therapy Light</a>
-            </div>
-        <nav class="navitems">
-            <ul class="unordered-list">
-                <li class="dropdown"><a href="">Product</a> </li>
-                <li><a href="">Pipeline</a></li>
-                <li><a href="">Mission</a></li>
-                <li><a href="">Contact Us</a></li>
+        <a href="#" class="logo">Therapy Light</a>
+        <img onclick="showMenu()" src="./img/bars-solid.svg" id="bar-icon" alt="">
+        <nav class="navitems" id="navitems">
+            <img onclick="hideMenu()" src="./img/xmark-solid.svg" id="close-icon" alt="">
+            <ul class="list">
+                <li onclick="active()" id="dropdown" class="list-item"><a href="#">Product <img src="./img/angle-down-solid.svg" alt=""></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Mental&nbsp;Therapy</a></li>
+                        <li><a href="#">Body&nbsp;Therapy</a></li>
+                        <li><a href="#">Soul&nbsp;Therapy</a></li>
+                    </ul>
+                </li>
+                <li class="list-item"><a href="#">Pipeline</a></li>
+                <li class="list-item"><a href="#">Mission</a></li>
+                <li class="list-item"><a href="#">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     
-    <!-- ============== home page =============== -->
+    <!-- ============== home section =============== -->
     
-    <section class="homepage">
+    <section class="home-section">
         <div class="content-container">
-            <div class="content">
-                <h1>The Future of Digital Therapy is Bright</h1>
-                <p class="paragrapgh">Our products are rapidly changing how patients and medical teams monitor, manage and treat health issues. </p>
-                <button class="btn">LEARN MORE</button>
-            </div>
+            <h1 class="heading-text">The Future of Digital Therapy is Bright</h1>
+            <p class="text">Our products are rapidly changing how patients and medical teams monitor, manage and treat health issues. </p>
+            <button class="btn">learn more</button>
         </div>
     </section>
     
-    <!-- ============= goalpage ============== -->
+    <!-- ============= goal section ============== -->
 
-    <section class="goalpage">
+    <section class="goal-section">
         <div class="content-container">
-            <div class="content">
-                <h2>Our Misson</h2>
-                <p class="below-heading">What we believe in</p>
-                <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
+            <img src="./img/delighter.svg" alt="" class="overlay-image">
+            <h2 class="heading-text">Our Misson</h2>
+            <p class="sub-heading-text">What we believe in</p>
+            <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
     </section>
 
-    <!-- ============ values page =========== -->
+    <!-- ============ values section =========== -->
 
-    <section class="valuespage">
-        <div class="content-container">
-            <div class="content">
-                <h3>Our Core Values</h3>
-                <p class="below-heading">We Thrive at</p>               
+    <section class="values-section">
+            <div class="content-container">
+                <h3 class="heading-text">Our Core Values</h3>
+                <p class="sub-heading-text">We Thrive at</p>
+                <div class="chart"><div class="chart-item"><p class="chart-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer </p></div><div class="chart-item"><p class="chart-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div><div class="chart-item"><p class="chart-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p></div></div>
             </div>
-            <div class="chart"><div class="chart-item"><p class="chart-paragrapgh">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div><div class="chart-item"><p class="chart-paragrapgh">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div><div class="chart-item"><p class="chart-paragrapgh">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div></div>
-        </div>
+            
     </section>
 
 
-    <!-- ================= approach page ================== -->
+    <!-- ================= approach section ================== -->
 
-    <section class="approach-page">
+    <section class="approach-section">
         <div class="content-container">
-            <div class="content">
-                <h4>Our Approach</h4>
-                <p class="below-heading">How we do it</p>
-                <div class="chart">
-                    <div class="vertical-chart">
-                        <div class="vertical-chart-item"><p class="chart-heading">We Listen</p><p class="chart-paragrapgh">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
-                        <div class="vertical-chart-item"><p class="chart-heading">We Iterate</p><p class="chart-paragrapgh">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
-                    </div><div class="vertical-chart" id="zig-zag">
-                        <div class="vertical-chart-item"><p class="chart-heading">We Analyse</p><p class="chart-paragrapgh">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
-                        <div class="vertical-chart-item"><p class="chart-heading">We Solve</p><p class="chart-paragrapgh">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
-                    </div>
+            <img src="./img/delighter-2.svg" alt="" class="overlay-image">
+            <h4 class="heading-text">Our Approach</h4>
+            <p class="sub-heading-text">How we do it</p>
+            <div class="chart">
+                <div class="vertical-chart">
+                    <div class="vertical-chart-item"><p class="chart-heading-text">We Listen</p><p class="chart-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+                    <div class="vertical-chart-item"><p class="chart-heading-text">We Iterate</p><p class="chart-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+                </div><div class="vertical-chart" id="zig-zag">
+                    <div class="vertical-chart-item"><p class="chart-heading-text">We Analyse</p><p class="chart-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+                    <div class="vertical-chart-item"><p class="chart-heading-text">We Solve</p><p class="chart-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. took a galley of type and scrambled it to make a type specimen book.</p></div>
                 </div>
             </div>
         </div>
@@ -85,40 +84,68 @@
 
     <!-- ============== footer ============= -->
 
-    <section class="footer">
+    <footer class="footer">
         <div class="content-container">
-            <div class="content">
-                <div class="footer-links">
-                    <div class="link-chart">
-                        <div class="link"><a href="#" class="footer-logo">Therapy Light</a></div>
-                        <div class="link"><p class="footer-contacts">9800 Avenue Road 21st Floor, Arizona, PHX 77056</p></div>
-                        <div class="link"><p class="footer-contacts">Phone: (800) 310-6094</p></div>
-                        <div class="link"><a href="#" class="socials"><span class="material-symbols-outlined">home</span></a><a href="" class="socials"><span class="material-symbols-outlined">home</span></a><a href="" class="socials"><span class="material-symbols-outlined">home</span></a></div>
-                    </div><div class="link-chart">
-                        <div class="link"><a href="#">Product</a></div>
-                        <div class="link"><a href="#">Pipeline</a></div>
-                        <div class="link"><a href="#">Leadership</a></div>
-                        <div class="link"><a href="#">Contact Us</a></div>
-                    </div><div class="link-chart">
-                        <div class="link"><a href="#">Eating Disorder</a></div>
-                        <div class="link"><a href="#">Irritable Bowel Syndrome</a></div>
-                        <div class="link"><a href="#">Cardiovascular Disorder</a></div>
-                    </div><div class="link-chart">
-                        <div class="link"><a href="#">Diabetes and Pre Diabetes</a></div>
-                        <div class="link"><a href="#">Substance Use Disorder</a></div>
-                        <div class="link"><a href="#">Post Bariatric Surgery</a></div>
-                    </div>
+            <div class="footer-links">
+                <ul class="link-chart">
+                    <li><a href="#" class="footer-logo">Therapy Light</a></li>
+                    <li><p class="footer-contacts">9800 Avenue Road 21st Floor, Arizona, PHX 77056</p></li>
+                    <li><p class="footer-contacts">Phone: <a href="tel:(800) 310-6094">(800) 310-6094</a></p></li>
+                    <li><a href="#" class="socials"><img src="./img/fb.svg" alt=""></a><a href="#" class="socials"><img src="./img/twt.svg" alt=""></a><a href="#" class="socials"><img src="./img/in.svg" alt=""></a>
+                    </li></ul><ul class="link-chart">
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Pipeline</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul><ul class="link-chart">
+                    <li><a href="#">Eating Disorder</a></li>
+                    <li><a href="#">Irritable Bowel Syndrome</a></li>
+                    <li><a href="#">Cardiovascular Disorder</a></li>
+                </ul><ul class="link-chart">
+                    <li><a href="#">Diabetes and Pre Diabetes</a></li>
+                    <li><a href="#">Substance Use Disorder</a></li>
+                    <li><a href="#">Post Bariatric Surgery</a></li>
+                </ul>
+            </div>
+            <div class="footer-terms">
+                <div style="clear: both;"></div>
+                <span class="copyright">© Copyright 2019 Therapy Light. All rights reserved.</span>
+                <div class="terms-policies">
+                    <span><a href="#">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Terms And Conditions</a></span>
                 </div>
-                <div class="footer-terms">
-                    <span class="copyright">© Copyright 2019 Therapy Light. All rights reserved.</span>
-                    <div class="terms-policies">
-                        <a href="#">Privacy Policy</a><a href="#">Terms And Conditions</a>
-                    </div>
-                </div>
+                <div style="clear: both;"></div>
             </div>
         </div>
-    </section>
+    </footer>
 
+
+
+<script >
+    window.addEventListener('scroll', () => {
+    document.querySelector('header').classList.toggle('show-box-shadow', window.scrollY>0);
+})
+
+    // dropdown
+    const dropdownImage = document.querySelector("#dropdown a img");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+    function active(){
+        dropdownImage.classList.toggle("rotate");
+        dropdownMenu.classList.toggle("dropdown-menu-active");
+    }
+
+    // menu for mobile
+    const barIcon = document.querySelector("#bar-icon");
+    const closeIcon = document.querySelector("#close-icon");
+    const navItems = document.querySelector("#navitems");
+    function showMenu(){
+        navItems.style.right = "0";
+    }
+    function hideMenu(){
+        navItems.style.right = "-200px";
+    }
+
+
+</script>
 </body>
 </html>
 
